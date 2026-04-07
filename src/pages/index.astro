@@ -4,6 +4,8 @@ import Hero from '../components/Hero.astro';
 import Origin from '../components/Origin.astro';
 import Deployment from '../components/Deployment.astro';
 import TheTurn from '../components/TheTurn.astro';
+import CrashLanding from '../components/CrashLanding.astro';
+import ClearingWreckage from '../components/ClearingWreckage.astro';
 import Phoenix from '../components/Phoenix.astro';
 import Footer from '../components/Footer.astro';
 import { getEntry } from 'astro:content';
@@ -15,6 +17,8 @@ const componentMap: Record<string, (_props: Record<string, never>) => any> = {
   origin: Origin,
   deployment: Deployment,
   theturn: TheTurn,
+  crashlanding: CrashLanding,
+  clearingwreckage: ClearingWreckage,
   phoenix: Phoenix,
 };
 ---

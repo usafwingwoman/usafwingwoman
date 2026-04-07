@@ -1,6 +1,6 @@
 ---
 import { getEntry } from 'astro:content';
-const entry = await getEntry('pages', 'home');
+const entry = await getEntry('pages', 'home_hero');
 const d = entry!.data;
 const nameParts = (d.hero_name as string).split(' ');
 const heroLast = nameParts.pop();

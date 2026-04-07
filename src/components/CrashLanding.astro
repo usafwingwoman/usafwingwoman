@@ -1,24 +1,24 @@
 ---
 import { getEntry } from 'astro:content';
-const entry = await getEntry('pages', 'forged_in_combat');
+const entry = await getEntry('pages', 'crash_landing');
 const d = entry!.data;
 ---
-<section class="origin" id="origin">
+<section class="crash" id="crash-landing">
   <div class="container--wide">
-    <div class="origin__grid">
-      <div class="origin__narrative reveal">
-        <p class="overline">Forged in Combat</p>
+    <div class="crash__grid">
+      <div class="crash__narrative reveal">
+        <p class="overline">Crash Landing</p>
         <hr class="fire-rule" />
-        <h2 class="display origin__heading">
+        <h2 class="display crash__heading">
           {d.heading_line1}<br/><em>{d.heading_line2}</em>
         </h2>
-        <div class="origin__body">
+        <div class="crash__body">
           {d.body?.map((p: { text: string }) => <p set:html={p.text} />)}
         </div>
       </div>
 
       <aside class="cred reveal">
-        {d.credentials?.map((c) => (
+        {d.credentials?.map((c: { label: string; value: string }) => (
           <div class="cred__item">
             <span class="cred__label">{c.label}</span>
             <span class="cred__value">{c.value}</span>
@@ -30,38 +30,43 @@ const d = entry!.data;
 </section>
 
 <style>
-.origin {
+.crash {
   padding-block: var(--section-pad);
   background: linear-gradient(180deg, var(--ash) 0%, var(--coal) 100%);
+  position: relative;
 }
-.origin__grid {
+.crash::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+}
+.crash__grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 4rem 5rem;
   align-items: start;
 }
-.origin__heading {
+.crash__heading {
   font-size: clamp(2.4rem, 6vw, 4.5rem);
   color: var(--white);
   margin-bottom: 2.5rem;
 }
-.origin__heading em {
-  color: var(--amber);
+.crash__heading em {
+  color: var(--flame);
   font-style: italic;
 }
-.origin__body {
+.crash__body {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
   color: var(--bone);
   opacity: 0.85;
 }
-.origin__body strong {
-  color: var(--amber);
-  font-weight: 500;
-}
+.crash__body em { color: var(--amber); font-style: italic; }
+.crash__body strong { color: var(--amber); font-weight: 500; }
 
-/* Credential block */
 .cred {
   border-left: 2px solid var(--crimson);
   padding-left: 1.75rem;
@@ -92,12 +97,10 @@ const d = entry!.data;
 }
 
 @media (max-width: 768px) {
-  .origin__grid {
+  .crash__grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .cred {
-    position: static;
-  }
+  .cred { position: static; }
 }
 </style>

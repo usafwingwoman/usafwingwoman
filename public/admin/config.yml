@@ -37,15 +37,15 @@ collections:
 
       - label: Home (Hero)
         name: home
-        file: src/content/pages/home.json
+        file: src/content/pages/home_hero.json
         fields:
           - { label: "Name", name: hero_name, widget: string }
           - { label: "Tagline Line 1", name: hero_tagline_1, widget: string }
           - { label: "Tagline Line 2", name: hero_tagline_2, widget: string }
 
-      - label: Forged
+      - label: Forged in Combat
         name: origin
-        file: src/content/pages/origin.json
+        file: src/content/pages/forged_in_combat.json
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
@@ -61,9 +61,9 @@ collections:
               - { label: Label, name: label, widget: string }
               - { label: Value, name: value, widget: string }
 
-      - label: Turbulence
+      - label: Brace for Turbulence
         name: deployment
-        file: src/content/pages/deployment.json
+        file: src/content/pages/brace_for_turbulence.json
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
@@ -82,7 +82,43 @@ collections:
 
       - label: Losing Altitude
         name: theturn
-        file: src/content/pages/theturn.json
+        file: src/content/pages/losing_altitude.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
+          - label: Credentials
+            name: credentials
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: Crash Landing
+        name: crashlanding
+        file: src/content/pages/crash_landing.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
+          - label: Credentials
+            name: credentials
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: Clearing the Wreckage
+        name: clearingwreckage
+        file: src/content/pages/clearing_wreckage.json
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
@@ -100,7 +136,7 @@ collections:
 
       - label: Phoenix (Rebirth)
         name: phoenix
-        file: src/content/pages/phoenix.json
+        file: src/content/pages/phoenix_rebirth.json
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }

@@ -1,8 +1,10 @@
 {
   "sections": [
     { "id": "origin", "label": "Forged in Combat", "enabled": true },
-    { "id": "deployment", "label": "Deployment", "enabled": true },
-    { "id": "theturn", "label": "The Turn", "enabled": true },
+    { "id": "deployment", "label": "Brace for Turbulence", "enabled": true },
+    { "id": "theturn", "label": "Losing Altitude", "enabled": true },
+    { "id": "crashlanding", "label": "Crash Landing", "enabled": true },
+    { "id": "clearingwreckage", "label": "Clearing the Wreckage", "enabled": true },
     { "id": "phoenix", "label": "Phoenix (Rebirth)", "enabled": true }
   ]
 }
