@@ -66,16 +66,24 @@
       "value": "#1 of 57"
     },
     {
-      "label": "Ground Job",
-      "value": "Chief of Security"
-    },
-    {
       "label": "Academic awards taken",
       "value": "Both"
     },
     {
+      "label": "Ground Job",
+      "value": "Chief of Security"
+    },
+    {
       "label": "Clearance held",
       "value": "Top Secret/TS-SCI"
+    },
+    {
+      "label": "Managed Security Clearances for",
+      "value": "160+"
+    },
+    {
+      "label": "Airmen Supervised on Ground",
+      "value": "5"
     },
     {
       "label": "Combat Missions",
