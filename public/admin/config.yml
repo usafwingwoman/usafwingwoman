@@ -43,7 +43,7 @@ collections:
           - { label: "Tagline Line 1", name: hero_tagline_1, widget: string }
           - { label: "Tagline Line 2", name: hero_tagline_2, widget: string }
 
-      - label: Origin
+      - label: Forged
         name: origin
         file: src/content/pages/origin.json
         fields:
@@ -61,7 +61,7 @@ collections:
               - { label: Label, name: label, widget: string }
               - { label: Value, name: value, widget: string }
 
-      - label: Deployment
+      - label: Turbulence
         name: deployment
         file: src/content/pages/deployment.json
         fields:
