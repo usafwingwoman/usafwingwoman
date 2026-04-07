@@ -1,13 +1,25 @@
 {
   "heading_line1": "Built for",
   "heading_line2": "something bigger.",
-  "body_p1": "In 2003, I raised my right hand and committed to something larger than myself. From the moment I walked into service, I was determined to be exceptional at it.",
-  "body_p2": "I trained as a <strong>Mission Crew Commander</strong> — one of the most demanding intelligence and electronic warfare roles in the Air Force. My aircraft was the <strong>EC-130H Compass Call</strong>, a highly classified Electronic Attack platform so specialized that only a handful of people in the world ever fly aboard it.",
-  "body_p3": "Onboard, I was the Chief. Nine crew members. Every decision from wheels-up to wheels-down.",
+  "body_p1": "Nevermind childhood. My real origin story started when I joined the U.S. Air Force as an Officer in 2003. It was the time period that forged my discipline, carved my leadership, and set a personal standard that has never left me — even if I wasn't always consciously aware of it.",
+  "body_p2": "In flight school, I was on a mission: to graduate at the top of my class so I could get my chosen airplane and duty base. Mission accomplished. I graduated #1 of 57 from Joint Specialized Undergraduate Navigator Training (JSUNT) and took home both academic awards. The General presenting the awards said to me, as I went to collect the second one from him, \"you've got a bright career ahead, Lieutenant.\"",
+  "body_p3": "I loved the military life. The brotherhood you experience is really like no other. You partied together, learned together, and fought together. It redefined teamwork and camaraderie for me. It gave me a place where I felt like I belonged.",
   "credentials": [
-    { "label": "JSUNT class rank", "value": "#1 of 57" },
-    { "label": "Academic awards taken", "value": "Both" },
-    { "label": "Crew members supervised airborne", "value": "9" },
-    { "label": "Clearance held", "value": "Top Secret" }
+    {
+      "label": "JSUNT class rank",
+      "value": "#1 of 57"
+    },
+    {
+      "label": "Academic awards taken",
+      "value": "Both"
+    },
+    {
+      "label": "Crew members supervised airborne",
+      "value": "9"
+    },
+    {
+      "label": "Clearance held",
+      "value": "Top Secret"
+    }
   ]
 }
