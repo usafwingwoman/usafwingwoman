@@ -1,0 +1,13 @@
+{
+  "heading_line1": "Built for",
+  "heading_line2": "something bigger.",
+  "body_p1": "In 2003, I raised my right hand and committed to something larger than myself. From the moment I walked into service, I was determined to be exceptional at it.",
+  "body_p2": "I trained as a <strong>Mission Crew Commander</strong> — one of the most demanding intelligence and electronic warfare roles in the Air Force. My aircraft was the <strong>EC-130H Compass Call</strong>, a highly classified Electronic Attack platform so specialized that only a handful of people in the world ever fly aboard it.",
+  "body_p3": "Onboard, I was the Chief. Nine crew members. Every decision from wheels-up to wheels-down.",
+  "credentials": [
+    { "label": "JSUNT class rank", "value": "#1 of 57" },
+    { "label": "Academic awards taken", "value": "Both" },
+    { "label": "Crew members supervised airborne", "value": "9" },
+    { "label": "Clearance held", "value": "Top Secret" }
+  ]
+}

@@ -1,20 +1,23 @@
 ---
+import { getEntry } from 'astro:content';
+const entry = await getEntry('pages', 'footer');
+const d = entry!.data;
 const year = new Date().getFullYear();
 ---
 <footer class="footer">
   <div class="footer__line" aria-hidden="true"></div>
   <div class="container footer__inner">
     <div class="footer__brand">
-      <p class="footer__name">Sage J Phoenix</p>
-      <p class="footer__sub overline">USAF Wingwoman</p>
+      <p class="footer__name">{d.name}</p>
+      <p class="footer__sub overline">{d.sub}</p>
     </div>
     <div class="footer__links">
-      <a href="https://aeryon.global" class="footer__link" target="_blank" rel="noopener">
-        Aeryon Global →
+      <a href={d.aeryon_url} class="footer__link" target="_blank" rel="noopener">
+        {d.aeryon_label}
       </a>
     </div>
     <p class="footer__copy">
-      © {year} · Honorably served 2003–2007 · Operation Iraqi Freedom · EC-130H Compass Call
+      © {year} · {d.copyright}
     </p>
   </div>
 </footer>

@@ -11,4 +11,37 @@ const stories = defineCollection({
   }),
 });
 
-export const collections = { stories };
+const credential = z.object({ label: z.string(), value: z.string() });
+
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/pages' }),
+  schema: z.object({
+    // Section headings
+    heading_line1: z.string().optional(),
+    heading_line2: z.string().optional(),
+    heading_line3: z.string().optional(),
+    // Body paragraphs (may contain inline HTML)
+    body_p1: z.string().optional(),
+    body_p2: z.string().optional(),
+    body_p3: z.string().optional(),
+    // Credential sidebar
+    credentials: z.array(credential).optional(),
+    // Deployment blockquote
+    blockquote: z.string().optional(),
+    // Phoenix declaration
+    declaration_line1: z.string().optional(),
+    declaration_line2: z.string().optional(),
+    // Phoenix venture link
+    venture_label: z.string().optional(),
+    venture_text: z.string().optional(),
+    venture_url: z.string().optional(),
+    // Footer
+    name: z.string().optional(),
+    sub: z.string().optional(),
+    aeryon_url: z.string().optional(),
+    aeryon_label: z.string().optional(),
+    copyright: z.string().optional(),
+  }).passthrough(),
+});
+
+export const collections = { stories, pages };

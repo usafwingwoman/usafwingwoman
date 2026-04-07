@@ -1,4 +1,7 @@
 ---
+import { getEntry } from 'astro:content';
+const entry = await getEntry('pages', 'phoenix');
+const d = entry!.data;
 ---
 <section class="phoenix" id="rebirth">
   <div class="phoenix__bg" aria-hidden="true">
@@ -11,35 +14,24 @@
       <p class="overline">The Rebirth</p>
       <hr class="fire-rule" />
       <h2 class="display phoenix__heading">
-        I burned it all<br/>down.<em> On purpose.</em>
+        {d.heading_line1}<br/><em>{d.heading_line2}</em>
       </h2>
       <div class="phoenix__body">
-        <p>
-          Today I am <strong>Sage J Phoenix</strong>. Not a revision of who I was —
-          a complete rebirth. I burned the old identity to the ground: the shame,
-          the trauma, the stories that no longer served me. All of it, ash.
-        </p>
-        <p>
-          What rose from it was always real: the discipline of a Mission Crew Commander.
-          The calm of someone who supervised nine people at altitude over hostile territory.
-          The precision of a Chief who managed top secret operations on the ground.
-          The leadership those above and below her always trusted.
-        </p>
-        <p>
-          I am 48 years old. It is my time to build, succeed, and leave a remarkable legacy.
-        </p>
+        <p set:html={d.body_p1} />
+        <p>{d.body_p2}</p>
+        <p>{d.body_p3}</p>
         <p class="phoenix__declaration">
-          The mission isn't over.<br/>
-          <em>It's just beginning.</em>
+          {d.declaration_line1}<br/>
+          <em>{d.declaration_line2}</em>
         </p>
       </div>
     </div>
 
     <aside class="cred reveal">
       <div class="cred__item cred__item--link">
-        <span class="cred__label">Current venture</span>
-        <a href="https://aeryon.global" class="cred__link" target="_blank" rel="noopener">
-          aeryon.global →
+        <span class="cred__label">{d.venture_label}</span>
+        <a href={d.venture_url} class="cred__link" target="_blank" rel="noopener">
+          {d.venture_text}
         </a>
       </div>
     </aside>

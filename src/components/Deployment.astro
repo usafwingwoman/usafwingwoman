@@ -1,4 +1,7 @@
 ---
+import { getEntry } from 'astro:content';
+const entry = await getEntry('pages', 'deployment');
+const d = entry!.data;
 ---
 <section class="deploy" id="deployment">
   <div class="deploy__bg" aria-hidden="true"></div>
@@ -7,48 +10,25 @@
       <p class="overline">Operation Iraqi Freedom · 2005</p>
       <hr class="fire-rule" />
       <h2 class="display deploy__heading">
-        When it counted<br/>most, I was<br/><em>the one.</em>
+        {d.heading_line1}<br/>{d.heading_line2}<br/><em>{d.heading_line3}</em>
       </h2>
       <div class="deploy__body">
-        <p>
-          When my unit deployed to Iraq, I deployed as the only dual-qualified
-          Mission Crew Commander on the EC-130H Compass Call airframe.
-          That wasn't a title — it was a weight.
-        </p>
-        <p>
-          Every sortie we flew depended on my expertise and my decisions.
-          There was no one else. I owned it.
-        </p>
-        <p>
-          On the ground, my squadron commander tapped me as <strong>Chief of Security</strong> —
-          responsible for information security, operational security, and personnel security
-          for the entire unit. I managed top secret clearance upgrades and led five airmen
-          to the same standard I held in the air.
-        </p>
+        <p>{d.body_p1}</p>
+        <p>{d.body_p2}</p>
+        <p set:html={d.body_p3} />
         <blockquote class="deploy__quote">
-          <p>"Always delivered better than expected. Led from the front.
-          Gave her time to others freely."</p>
+          <p>"{d.blockquote}"</p>
         </blockquote>
       </div>
     </div>
 
     <aside class="cred reveal">
-      <div class="cred__item">
-        <span class="cred__label">Combat missions</span>
-        <span class="cred__value">30+</span>
-      </div>
-      <div class="cred__item">
-        <span class="cred__label">Combat hours in hostile territory</span>
-        <span class="cred__value">250+</span>
-      </div>
-      <div class="cred__item">
-        <span class="cred__label">Meritorious service decoration</span>
-        <span class="cred__value">Air Medal</span>
-      </div>
-      <div class="cred__item">
-        <span class="cred__label">Airmen led as Chief of Security</span>
-        <span class="cred__value">5</span>
-      </div>
+      {d.credentials?.map((c) => (
+        <div class="cred__item">
+          <span class="cred__label">{c.label}</span>
+          <span class="cred__value">{c.value}</span>
+        </div>
+      ))}
     </aside>
   </div>
 </section>

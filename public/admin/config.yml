@@ -23,39 +23,88 @@ collections:
   - name: pages
     label: Pages
     files:
-      - label: Home
+      - label: Home (Hero)
         name: home
         file: src/content/pages/home.json
         fields:
-          - { label: "Hero — Name", name: hero_name, widget: string }
-          - { label: "Hero — Tagline Line 1", name: hero_tagline_1, widget: string }
-          - { label: "Hero — Tagline Line 2", name: hero_tagline_2, widget: string }
-          - { label: "Origin — Heading Line 1", name: origin_heading_1, widget: string }
-          - { label: "Origin — Heading Line 2", name: origin_heading_2, widget: string }
-          - { label: "Origin — Paragraph 1", name: origin_p1, widget: text }
-          - { label: "Origin — Paragraph 2", name: origin_p2, widget: text }
-          - { label: "Origin — Paragraph 3", name: origin_p3, widget: text }
-          - { label: "Deployment — Heading Line 1", name: deploy_heading_1, widget: string }
-          - { label: "Deployment — Heading Line 2", name: deploy_heading_2, widget: string }
-          - { label: "Deployment — Heading Line 3", name: deploy_heading_3, widget: string }
-          - { label: "Deployment — Paragraph 1", name: deploy_p1, widget: text }
-          - { label: "Deployment — Paragraph 2", name: deploy_p2, widget: text }
-          - { label: "Deployment — Paragraph 3", name: deploy_p3, widget: text }
-          - { label: "Deployment — Pull Quote", name: deploy_quote, widget: string }
-          - { label: "The Turn — Heading Line 1", name: turn_heading_1, widget: string }
-          - { label: "The Turn — Heading Line 2", name: turn_heading_2, widget: string }
-          - { label: "The Turn — Paragraph 1", name: turn_p1, widget: text }
-          - { label: "The Turn — Paragraph 2", name: turn_p2, widget: text }
-          - { label: "The Turn — Paragraph 3", name: turn_p3, widget: text }
-          - { label: "The Turn — Paragraph 4", name: turn_p4, widget: text }
-          - { label: "Phoenix — Heading Line 1", name: phoenix_heading_1, widget: string }
-          - { label: "Phoenix — Heading Line 2", name: phoenix_heading_2, widget: string }
-          - { label: "Phoenix — Paragraph 1", name: phoenix_p1, widget: text }
-          - { label: "Phoenix — Paragraph 2", name: phoenix_p2, widget: text }
-          - { label: "Phoenix — Paragraph 3", name: phoenix_p3, widget: text }
-          - { label: "Phoenix — Declaration Line 1", name: phoenix_decl_1, widget: string }
-          - { label: "Phoenix — Declaration Line 2", name: phoenix_decl_2, widget: string }
-          - { label: "Footer — Aeryon URL", name: footer_aeryon_url, widget: string }
+          - { label: "Name", name: hero_name, widget: string }
+          - { label: "Tagline Line 1", name: hero_tagline_1, widget: string }
+          - { label: "Tagline Line 2", name: hero_tagline_2, widget: string }
+
+      - label: Origin
+        name: origin
+        file: src/content/pages/origin.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - { label: "Paragraph 1", name: body_p1, widget: text }
+          - { label: "Paragraph 2 (HTML allowed)", name: body_p2, widget: text }
+          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - label: Credentials
+            name: credentials
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: Deployment
+        name: deployment
+        file: src/content/pages/deployment.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - { label: "Heading Line 3", name: heading_line3, widget: string }
+          - { label: "Paragraph 1", name: body_p1, widget: text }
+          - { label: "Paragraph 2", name: body_p2, widget: text }
+          - { label: "Paragraph 3 (HTML allowed)", name: body_p3, widget: text }
+          - { label: "Pull Quote", name: blockquote, widget: text }
+          - label: Credentials
+            name: credentials
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: The Turn
+        name: theturn
+        file: src/content/pages/theturn.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - { label: "Paragraph 1", name: body_p1, widget: text }
+          - { label: "Paragraph 2 (HTML allowed)", name: body_p2, widget: text }
+          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - label: Credentials
+            name: credentials
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+
+      - label: Phoenix (Rebirth)
+        name: phoenix
+        file: src/content/pages/phoenix.json
+        fields:
+          - { label: "Heading Line 1", name: heading_line1, widget: string }
+          - { label: "Heading Line 2", name: heading_line2, widget: string }
+          - { label: "Paragraph 1 (HTML allowed)", name: body_p1, widget: text }
+          - { label: "Paragraph 2", name: body_p2, widget: text }
+          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - { label: "Declaration Line 1", name: declaration_line1, widget: string }
+          - { label: "Declaration Line 2", name: declaration_line2, widget: string }
+          - { label: "Venture Label", name: venture_label, widget: string }
+          - { label: "Venture Link Text", name: venture_text, widget: string }
+          - { label: "Venture URL", name: venture_url, widget: string }
+
+      - label: Footer
+        name: footer
+        file: src/content/pages/footer.json
+        fields:
+          - { label: "Name", name: name, widget: string }
+          - { label: "Subtitle", name: sub, widget: string }
+          - { label: "Aeryon URL", name: aeryon_url, widget: string }
+          - { label: "Aeryon Link Text", name: aeryon_label, widget: string }
+          - { label: "Copyright Line", name: copyright, widget: string }
 
   - name: stories
     label: Stories

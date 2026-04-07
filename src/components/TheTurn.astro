@@ -1,4 +1,7 @@
 ---
+import { getEntry } from 'astro:content';
+const entry = await getEntry('pages', 'theturn');
+const d = entry!.data;
 ---
 <section class="turn" id="the-turn">
   <div class="container--wide">
@@ -7,40 +10,22 @@
         <p class="overline">The Turn</p>
         <hr class="fire-rule" />
         <h2 class="display turn__heading">
-          I left early.<br/><em>It was enough.</em>
+          {d.heading_line1}<br/><em>{d.heading_line2}</em>
         </h2>
         <div class="turn__body">
-          <p>
-            In the military, I got married. I got pregnant. And at four years of service —
-            with everything still ahead of me in uniform — I chose a different path.
-          </p>
-          <p>
-            For years, I carried that choice like a wound. The shame of leaving early.
-            The grief of an identity I'd poured myself into.
-            The question that wouldn't quiet: <em>What would I have become?</em>
-          </p>
-          <p>
-            But honest reckoning rewrites the story. I didn't abandon my service —
-            I completed it on my own terms. Every crew I led, every mission I owned,
-            every standard I upheld came with me.
-            What I carried out of that chapter is worth more than what I left behind.
-          </p>
+          <p>{d.body_p1}</p>
+          <p set:html={d.body_p2} />
+          <p>{d.body_p3}</p>
         </div>
       </div>
 
       <aside class="cred reveal">
-        <div class="cred__item">
-          <span class="cred__label">Revenue grown post-military</span>
-          <span class="cred__value">560%</span>
-        </div>
-        <div class="cred__item">
-          <span class="cred__label">Retention rate achieved</span>
-          <span class="cred__value">98%</span>
-        </div>
-        <div class="cred__item">
-          <span class="cred__label">Consecutive years Top 10</span>
-          <span class="cred__value">4</span>
-        </div>
+        {d.credentials?.map((c) => (
+          <div class="cred__item">
+            <span class="cred__label">{c.label}</span>
+            <span class="cred__value">{c.value}</span>
+          </div>
+        ))}
       </aside>
     </div>
   </div>
