@@ -2,35 +2,54 @@
 ---
 <section class="deploy" id="deployment">
   <div class="deploy__bg" aria-hidden="true"></div>
-  <div class="container deploy__inner">
-    <div class="deploy__text reveal">
+  <div class="container--wide deploy__grid">
+    <div class="deploy__narrative reveal">
       <p class="overline">Operation Iraqi Freedom · 2005</p>
       <hr class="fire-rule" />
       <h2 class="display deploy__heading">
         When it counted<br/>most, I was<br/><em>the one.</em>
       </h2>
+      <div class="deploy__body">
+        <p>
+          When my unit deployed to Iraq, I deployed as the only dual-qualified
+          Mission Crew Commander on the EC-130H Compass Call airframe.
+          That wasn't a title — it was a weight.
+        </p>
+        <p>
+          Every sortie we flew depended on my expertise and my decisions.
+          There was no one else. I owned it.
+        </p>
+        <p>
+          On the ground, my squadron commander tapped me as <strong>Chief of Security</strong> —
+          responsible for information security, operational security, and personnel security
+          for the entire unit. I managed top secret clearance upgrades and led five airmen
+          to the same standard I held in the air.
+        </p>
+        <blockquote class="deploy__quote">
+          <p>"Always delivered better than expected. Led from the front.
+          Gave her time to others freely."</p>
+        </blockquote>
+      </div>
     </div>
-    <div class="deploy__body reveal">
-      <p>
-        When my unit deployed to Iraq, I deployed as the only dual-qualified
-        Mission Crew Commander on the EC-130H Compass Call airframe.
-        That wasn't a title — it was a weight.
-      </p>
-      <p>
-        Every sortie we flew depended on my expertise and my decisions.
-        There was no one else. I owned it.
-      </p>
-      <p>
-        On the ground, my squadron commander tapped me as <strong>Chief of Security</strong> —
-        responsible for information security, operational security, and personnel security
-        for the entire unit. I managed top secret clearance upgrades and led five airmen
-        to the same standard I held in the air.
-      </p>
-      <blockquote class="deploy__quote">
-        <p>"Always delivered better than expected. Led from the front.
-        Gave her time to others freely."</p>
-      </blockquote>
-    </div>
+
+    <aside class="cred reveal">
+      <div class="cred__item">
+        <span class="cred__label">Combat missions</span>
+        <span class="cred__value">30+</span>
+      </div>
+      <div class="cred__item">
+        <span class="cred__label">Combat hours in hostile territory</span>
+        <span class="cred__value">250+</span>
+      </div>
+      <div class="cred__item">
+        <span class="cred__label">Meritorious service decoration</span>
+        <span class="cred__value">Air Medal</span>
+      </div>
+      <div class="cred__item">
+        <span class="cred__label">Airmen led as Chief of Security</span>
+        <span class="cred__value">5</span>
+      </div>
+    </aside>
   </div>
 </section>
 
@@ -47,20 +66,18 @@
   background: radial-gradient(ellipse 60% 80% at 90% 50%, rgba(139,26,26,0.15) 0%, transparent 70%);
   pointer-events: none;
 }
-.deploy__inner {
+.deploy__grid {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 2fr;
   gap: 4rem 5rem;
   align-items: start;
   position: relative;
   z-index: 1;
 }
-@media (max-width: 768px) {
-  .deploy__inner { grid-template-columns: 1fr; gap: 2.5rem; }
-}
 .deploy__heading {
   font-size: clamp(2.4rem, 5.5vw, 4rem);
   color: var(--white);
+  margin-bottom: 2.5rem;
   margin-top: 1rem;
 }
 .deploy__heading em {
@@ -89,5 +106,45 @@
   font-size: 1.05rem;
   color: var(--slate);
   line-height: 1.6;
+}
+
+/* Credential block */
+.cred {
+  border-left: 2px solid var(--crimson);
+  padding-left: 1.75rem;
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+}
+.cred__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid rgba(155,127,120,0.12);
+}
+.cred__item:last-child { border-bottom: none; }
+.cred__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.cred__value {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .deploy__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .cred {
+    position: static;
+  }
 }
 </style>

@@ -1,30 +1,47 @@
 ---
 ---
 <section class="turn" id="the-turn">
-  <div class="container">
-    <div class="turn__inner reveal">
-      <p class="overline">The Turn</p>
-      <hr class="fire-rule" />
-      <h2 class="display turn__heading">
-        I left early.<br/><em>It was enough.</em>
-      </h2>
-      <div class="turn__body">
-        <p>
-          In the military, I got married. I got pregnant. And at four years of service —
-          with everything still ahead of me in uniform — I chose a different path.
-        </p>
-        <p>
-          For years, I carried that choice like a wound. The shame of leaving early.
-          The grief of an identity I'd poured myself into.
-          The question that wouldn't quiet: <em>What would I have become?</em>
-        </p>
-        <p>
-          But honest reckoning rewrites the story. I didn't abandon my service —
-          I completed it on my own terms. Every crew I led, every mission I owned,
-          every standard I upheld came with me.
-          What I carried out of that chapter is worth more than what I left behind.
-        </p>
+  <div class="container--wide">
+    <div class="turn__grid">
+      <div class="turn__narrative reveal">
+        <p class="overline">The Turn</p>
+        <hr class="fire-rule" />
+        <h2 class="display turn__heading">
+          I left early.<br/><em>It was enough.</em>
+        </h2>
+        <div class="turn__body">
+          <p>
+            In the military, I got married. I got pregnant. And at four years of service —
+            with everything still ahead of me in uniform — I chose a different path.
+          </p>
+          <p>
+            For years, I carried that choice like a wound. The shame of leaving early.
+            The grief of an identity I'd poured myself into.
+            The question that wouldn't quiet: <em>What would I have become?</em>
+          </p>
+          <p>
+            But honest reckoning rewrites the story. I didn't abandon my service —
+            I completed it on my own terms. Every crew I led, every mission I owned,
+            every standard I upheld came with me.
+            What I carried out of that chapter is worth more than what I left behind.
+          </p>
+        </div>
       </div>
+
+      <aside class="cred reveal">
+        <div class="cred__item">
+          <span class="cred__label">Revenue grown post-military</span>
+          <span class="cred__value">560%</span>
+        </div>
+        <div class="cred__item">
+          <span class="cred__label">Retention rate achieved</span>
+          <span class="cred__value">98%</span>
+        </div>
+        <div class="cred__item">
+          <span class="cred__label">Consecutive years Top 10</span>
+          <span class="cred__value">4</span>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
@@ -42,8 +59,11 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--crimson), transparent);
 }
-.turn__inner {
-  max-width: 700px;
+.turn__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem 5rem;
+  align-items: start;
 }
 .turn__heading {
   font-size: clamp(2.4rem, 6vw, 4.5rem);
@@ -64,5 +84,45 @@
 .turn__body em {
   color: var(--amber);
   font-style: italic;
+}
+
+/* Credential block */
+.cred {
+  border-left: 2px solid var(--crimson);
+  padding-left: 1.75rem;
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+}
+.cred__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid rgba(155,127,120,0.12);
+}
+.cred__item:last-child { border-bottom: none; }
+.cred__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.cred__value {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .turn__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .cred {
+    position: static;
+  }
 }
 </style>
