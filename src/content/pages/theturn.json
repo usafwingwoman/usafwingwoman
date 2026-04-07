@@ -1,14 +1,29 @@
 {
-  "heading_line1": "I left early.",
-  "heading_line2": "It was enough.",
+  "heading_line1": "I pulled the",
+  "heading_line2": "Ejection handle",
   "body": [
-    { "text": "In the military, I got married. I got pregnant. And at four years of service — with everything still ahead of me in uniform — I chose a different path." },
-    { "text": "For years, I carried that choice like a wound. The shame of leaving early. The grief of an identity I'd poured myself into. The question that wouldn't quiet: <em>What would I have become?</em>" },
-    { "text": "But honest reckoning rewrites the story. I didn't abandon my service — I completed it on my own terms. Every crew I led, every mission I owned, every standard I upheld came with me. What I carried out of that chapter is worth more than what I left behind." }
+    {
+      "text": "In the military, I got married. I got pregnant. And at four years of service — with everything still ahead of me in uniform — I chose a different path."
+    },
+    {
+      "text": "For years, I carried that choice like a wound. The shame of leaving early. The grief of an identity I'd poured myself into. The question that wouldn't quiet: <em>What would I have become?</em>"
+    },
+    {
+      "text": "But honest reckoning rewrites the story. I didn't abandon my service — I completed it on my own terms. Every crew I led, every mission I owned, every standard I upheld came with me. What I carried out of that chapter is worth more than what I left behind."
+    }
   ],
   "credentials": [
-    { "label": "Revenue grown post-military", "value": "560%" },
-    { "label": "Retention rate achieved", "value": "98%" },
-    { "label": "Consecutive years Top 10", "value": "4" }
+    {
+      "label": "Revenue grown post-military",
+      "value": "560%"
+    },
+    {
+      "label": "Retention rate achieved",
+      "value": "98%"
+    },
+    {
+      "label": "Consecutive years Top 10",
+      "value": "4"
+    }
   ]
 }
