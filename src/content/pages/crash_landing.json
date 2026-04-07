@@ -1,6 +1,6 @@
 {
-  "heading_line1": "Crash",
-  "heading_line2": "Landing.",
+  "heading_line1": "The Ground was",
+  "heading_line2": "Approaching — Fast.",
   "body": [
     {
       "text": "What was supposed to be a fresh start and happy ending, ended up being anything but."
@@ -15,10 +15,7 @@
       "text": "My ex didn't want to share in raising his kid — despite me not only allowing him a chance, but encouraging it."
     },
     {
-      "text": "I really wanted to give my kid some sense of a normal two parent life — but it wasn't meant to be."
-    },
-    {
-      "text": "He took a job out of state. The in-laws ended in divorce, too."
+      "text": "He took a job out of state. The in-laws marriage ended, too."
     },
     {
       "text": "I was ready to move out of state to start fresh."
@@ -48,7 +45,7 @@
       "text": "Death by suicide."
     },
     {
-      "text": "I fell to my knees and started balling."
+      "text": "I fell to my knees and started bawling."
     },
     {
       "text": "I stayed for an extra week to plan and attend his funeral."
@@ -60,7 +57,7 @@
   "credentials": [
     {
       "label": "Mood",
-      "value": "Sadness"
+      "value": "Heavy"
     }
   ]
 }
