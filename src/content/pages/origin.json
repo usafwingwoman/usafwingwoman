@@ -66,12 +66,12 @@
       "value": "#1 of 57"
     },
     {
-      "label": "Academic awards taken",
-      "value": "Both"
+      "label": "Ground Job",
+      "value": "Chief of Security"
     },
     {
-      "label": "Crew members supervised airborne",
-      "value": "9"
+      "label": "Academic awards taken",
+      "value": "Both"
     },
     {
       "label": "Clearance held",
@@ -90,8 +90,12 @@
       "value": "Air Medal"
     },
     {
+      "label": "Crew members supervised airborne",
+      "value": "9"
+    },
+    {
       "label": "Aircrew Position",
-      "value": "Chief (Mission Crew Commander)"
+      "value": "Chief"
     }
   ]
 }
