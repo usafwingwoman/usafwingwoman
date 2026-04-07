@@ -1,4 +1,10 @@
 ---
+import { getEntry } from 'astro:content';
+const entry = await getEntry('pages', 'home');
+const d = entry!.data;
+const nameParts = (d.hero_name as string).split(' ');
+const heroLast = nameParts.pop();
+const heroFirst = nameParts.join(' ');
 ---
 <section class="hero">
   <div class="hero__bg" aria-hidden="true">
@@ -10,9 +16,9 @@
 
   <div class="hero__content container">
     <p class="overline hero__overline">USAFWingwoman.com</p>
-    <h1 class="display hero__name">Sage J<br/><em>Phoenix</em></h1>
+    <h1 class="display hero__name">{heroFirst}<br/><em>{heroLast}</em></h1>
     <p class="hero__tagline display-italic">
-      From the ashes of service,<br/>a remarkable life takes flight.
+      {d.hero_tagline_1}<br/>{d.hero_tagline_2}
     </p>
     <div class="hero__meta">
       <span>U.S. Air Force · 2003–2007</span>
