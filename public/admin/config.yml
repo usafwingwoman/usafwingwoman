@@ -2,7 +2,7 @@ backend:
   name: github
   repo: usafwingwoman/usafwingwoman
   branch: main
-  base_url: https://sveltia-cms-auth.sagephoenix11.workers.dev
+  base_url: https://usafwingwoman-cms-auth.sagephoenix11.workers.dev
 
 media_folder: public/images
 public_folder: /images
