@@ -23,6 +23,18 @@ collections:
   - name: pages
     label: Pages
     files:
+      - label: Site Layout
+        name: layout
+        file: src/content/pages/layout.json
+        fields:
+          - label: Sections
+            name: sections
+            widget: list
+            fields:
+              - { label: "Section ID", name: id, widget: string, hint: "origin, deployment, theturn, phoenix — or any future section id" }
+              - { label: "Display Name", name: label, widget: string }
+              - { label: "Enabled", name: enabled, widget: boolean, default: true }
+
       - label: Home (Hero)
         name: home
         file: src/content/pages/home.json

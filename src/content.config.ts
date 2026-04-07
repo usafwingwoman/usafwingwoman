@@ -13,9 +13,13 @@ const stories = defineCollection({
 
 const credential = z.object({ label: z.string(), value: z.string() });
 
+const section = z.object({ id: z.string(), label: z.string(), enabled: z.boolean() });
+
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/pages' }),
   schema: z.object({
+    // Site layout
+    sections: z.array(section).optional(),
     // Section headings
     heading_line1: z.string().optional(),
     heading_line2: z.string().optional(),

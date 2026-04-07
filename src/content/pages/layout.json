@@ -1,0 +1,8 @@
+{
+  "sections": [
+    { "id": "origin", "label": "Forged in Combat", "enabled": true },
+    { "id": "deployment", "label": "Deployment", "enabled": true },
+    { "id": "theturn", "label": "The Turn", "enabled": true },
+    { "id": "phoenix", "label": "Phoenix (Rebirth)", "enabled": true }
+  ]
+}

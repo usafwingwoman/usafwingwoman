@@ -6,6 +6,17 @@ import Deployment from '../components/Deployment.astro';
 import TheTurn from '../components/TheTurn.astro';
 import Phoenix from '../components/Phoenix.astro';
 import Footer from '../components/Footer.astro';
+import { getEntry } from 'astro:content';
+
+const layoutEntry = await getEntry('pages', 'layout');
+const sections = (layoutEntry?.data.sections as { id: string; label: string; enabled: boolean }[]) ?? [];
+
+const componentMap: Record<string, (_props: Record<string, never>) => any> = {
+  origin: Origin,
+  deployment: Deployment,
+  theturn: TheTurn,
+  phoenix: Phoenix,
+};
 ---
 <Base
   title="Sage J Phoenix | USAF Wingwoman"
@@ -13,10 +24,13 @@ import Footer from '../components/Footer.astro';
 >
   <main>
     <Hero />
-    <Origin />
-    <Deployment />
-    <TheTurn />
-    <Phoenix />
+    {sections
+      .filter(s => s.enabled)
+      .map(s => {
+        const Component = componentMap[s.id];
+        return Component ? <Component /> : null;
+      })
+    }
   </main>
   <Footer />
 </Base>
