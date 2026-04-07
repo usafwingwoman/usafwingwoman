@@ -1,0 +1,73 @@
+---
+---
+<section class="turn" id="the-turn">
+  <div class="container">
+    <div class="turn__inner reveal">
+      <p class="overline">The Turn</p>
+      <hr class="fire-rule" />
+      <h2 class="display turn__heading">
+        I left early.<br/><em>It was enough.</em>
+      </h2>
+      <div class="turn__body">
+        <p>
+          In the military, I got married. I got pregnant. And at four years of service — 
+          with everything still ahead of me in uniform — I made the hardest decision 
+          of my life and chose a different path.
+        </p>
+        <p>
+          For years, I carried the weight of that choice like a wound. The shame of 
+          leaving early. The grief of an identity I'd poured myself into. The question 
+          that wouldn't quiet itself: <em>What would I have become?</em>
+        </p>
+        <p>
+          But time — and honest reckoning — has a way of rewriting the story. I didn't 
+          abandon my service. I completed it on my own terms. And every skill I built, 
+          every crew I led, every mission I owned, every standard I upheld — all of it 
+          came with me.
+        </p>
+        <p>
+          I have since put my life in full perspective. The shame is gone. 
+          What I carried out of that chapter is worth more than what I left behind.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.turn {
+  padding-block: var(--section-pad);
+  background: linear-gradient(180deg, var(--coal) 0%, var(--ash) 100%);
+  position: relative;
+}
+.turn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+}
+.turn__inner {
+  max-width: 700px;
+}
+.turn__heading {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+.turn__heading em {
+  color: var(--flame);
+  font-style: italic;
+}
+.turn__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  color: var(--bone);
+  opacity: 0.85;
+}
+.turn__body em {
+  color: var(--amber);
+  font-style: italic;
+}
+</style>

@@ -1,0 +1,156 @@
+---
+---
+<section class="phoenix" id="rebirth">
+  <div class="phoenix__bg" aria-hidden="true">
+    <div class="phoenix__fire phoenix__fire--1"></div>
+    <div class="phoenix__fire phoenix__fire--2"></div>
+  </div>
+
+  <div class="container phoenix__inner">
+    <div class="phoenix__badge reveal">
+      <svg class="phoenix__icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Stylized flame / phoenix shape -->
+        <path d="M40 10 C30 20, 15 28, 20 44 C24 55, 32 60, 40 70 C48 60, 56 55, 60 44 C65 28, 50 20, 40 10Z" 
+              fill="url(#fireGrad)" opacity="0.9"/>
+        <path d="M40 22 C34 30, 26 35, 28 46 C31 54, 36 58, 40 65 C44 58, 49 54, 52 46 C54 35, 46 30, 40 22Z" 
+              fill="url(#coreGrad)" opacity="0.95"/>
+        <defs>
+          <linearGradient id="fireGrad" x1="40" y1="10" x2="40" y2="70" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8b1a1a"/>
+            <stop offset="50%" stop-color="#e05c2a"/>
+            <stop offset="100%" stop-color="#d4a843"/>
+          </linearGradient>
+          <linearGradient id="coreGrad" x1="40" y1="22" x2="40" y2="65" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#c0392b"/>
+            <stop offset="100%" stop-color="#e8913a"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="phoenix__text reveal">
+      <p class="overline">The Rebirth</p>
+      <hr class="fire-rule" />
+      <h2 class="display phoenix__heading">
+        I burned it all<br/>down.<em> On purpose.</em>
+      </h2>
+      <div class="phoenix__body">
+        <p>
+          Today I am <strong>Sage J Phoenix</strong>. Not a revision of who I was — 
+          a complete rebirth. I burned the old identity to the ground: the shame, 
+          the trauma, the stories that no longer served me. All of it, ash.
+        </p>
+        <p>
+          And from the ash, I brought what was always real: the discipline of a 
+          Mission Crew Commander. The calm of someone who has supervised nine people 
+          at 25,000 feet over hostile territory. The precision of a Chief of Security 
+          who managed top secret operations. The leadership that those above and 
+          below her always trusted.
+        </p>
+        <p>
+          I am 48 years old. It is literally my time to build, to succeed, 
+          and to leave a remarkable legacy.
+        </p>
+        <p class="phoenix__declaration">
+          The mission isn't over.<br/>
+          <em>It's just beginning.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.phoenix {
+  position: relative;
+  padding-block: var(--section-pad);
+  background: var(--ash);
+  overflow: hidden;
+}
+.phoenix__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.phoenix__fire {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+.phoenix__fire--1 {
+  width: 50vw; height: 50vw;
+  background: radial-gradient(circle, rgba(192,57,43,0.2) 0%, transparent 70%);
+  top: -20%; right: -10%;
+  animation: breathe 9s ease-in-out infinite;
+}
+.phoenix__fire--2 {
+  width: 35vw; height: 35vw;
+  background: radial-gradient(circle, rgba(232,145,58,0.15) 0%, transparent 70%);
+  bottom: -10%; left: 5%;
+  animation: breathe 12s ease-in-out infinite reverse 3s;
+}
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+
+.phoenix__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem 5rem;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 720px) {
+  .phoenix__inner { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.phoenix__badge {
+  padding-top: 1.5rem;
+}
+.phoenix__icon {
+  width: clamp(60px, 8vw, 90px);
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(224,92,42,0.4));
+  animation: flicker 4s ease-in-out infinite;
+}
+@keyframes flicker {
+  0%, 100% { filter: drop-shadow(0 0 20px rgba(224,92,42,0.4)); }
+  50% { filter: drop-shadow(0 0 35px rgba(212,168,67,0.6)); }
+}
+
+.phoenix__heading {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+.phoenix__heading em {
+  color: var(--amber);
+  font-style: italic;
+}
+.phoenix__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  color: var(--bone);
+  opacity: 0.85;
+}
+.phoenix__body strong {
+  color: var(--amber);
+  font-weight: 500;
+}
+.phoenix__declaration {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.4;
+  opacity: 1 !important;
+}
+.phoenix__declaration em {
+  color: var(--amber);
+  font-style: italic;
+}
+</style>
