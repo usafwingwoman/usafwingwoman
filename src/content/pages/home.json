@@ -1,14 +1,12 @@
 {
   "hero_name": "Sage J Phoenix",
-  "hero_tagline_1": "From the ashes of service,",
-  "hero_tagline_2": "a remarkable life takes flight.",
-
+  "hero_tagline_1": "Rising from the ashes,",
+  "hero_tagline_2": "a Phoenix is born.",
   "origin_heading_1": "Built for",
   "origin_heading_2": "something bigger.",
-  "origin_p1": "In 2003, I raised my right hand and committed to something larger than myself. I became an Airman of the United States Air Force — and from the moment I walked into service, I was determined to be exceptional at it.",
+  "origin_p1": "Nevermind childhood. My real origin story started started when I joined the U.S. Air Force as an Officer in 2003. It was the time period that forged my discipline, carved my leadership abilities, and set a standard that I've never stopped holding myself to.",
   "origin_p2": "I trained as a Mission Crew Commander, one of the most demanding intelligence and electronic warfare roles in the Air Force. My aircraft was the EC-130H Compass Call — a highly classified Electronic Attack platform so specialized that only a handful of people in the world ever fly aboard it.",
   "origin_p3": "Onboard, I was the Chief. I supervised a crew of nine, led mission planning, and was accountable for every decision from wheels-up to wheels-down.",
-
   "deploy_heading_1": "When it counted",
   "deploy_heading_2": "most, I was",
   "deploy_heading_3": "the one.",
@@ -16,14 +14,12 @@
   "deploy_p2": "My role was to enable uninterrupted combat operations. Every sortie we flew, every mission we executed, depended on my expertise, my decisions, and my leadership. There was no one else. I owned it.",
   "deploy_p3": "On the ground, my squadron commander trusted me as his first pick to serve as Chief of Security — responsible for all information security, operational security, and personnel security for the unit. I managed top secret clearance upgrades and led a team of five airmen with the same standards I applied in the air: precision, accountability, and zero tolerance for failure.",
   "deploy_quote": "I always delivered results better than expected, led from the front, and contributed my time to others freely.",
-
   "turn_heading_1": "I left early.",
   "turn_heading_2": "It was enough.",
   "turn_p1": "In the military, I got married. I got pregnant. And at four years of service — with everything still ahead of me in uniform — I made the hardest decision of my life and chose a different path.",
   "turn_p2": "For years, I carried the weight of that choice like a wound. The shame of leaving early. The grief of an identity I'd poured myself into. The question that wouldn't quiet itself: What would I have become?",
   "turn_p3": "But time — and honest reckoning — has a way of rewriting the story. I didn't abandon my service. I completed it on my own terms. And every skill I built, every crew I led, every mission I owned, every standard I upheld — all of it came with me.",
   "turn_p4": "I have since put my life in full perspective. The shame is gone. What I carried out of that chapter is worth more than what I left behind.",
-
   "phoenix_heading_1": "I burned it all",
   "phoenix_heading_2": "down. On purpose.",
   "phoenix_p1": "Today I am Sage J Phoenix. Not a revision of who I was — a complete rebirth. I burned the old identity to the ground: the shame, the trauma, the stories that no longer served me. All of it, ash.",
@@ -31,6 +27,5 @@
   "phoenix_p3": "I am 48 years old. It is literally my time to build, to succeed, and to leave a remarkable legacy.",
   "phoenix_decl_1": "The mission isn't over.",
   "phoenix_decl_2": "It's just beginning.",
-
   "footer_aeryon_url": "https://aeryonglobal.com"
 }
