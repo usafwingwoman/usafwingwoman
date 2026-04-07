@@ -9,7 +9,7 @@ const d = entry!.data;
     <div class="phoenix__fire phoenix__fire--2"></div>
   </div>
 
-  <div class="container--wide phoenix__grid">
+  <div class={`container--wide phoenix__grid${!d.venture_url ? ' phoenix__grid--full' : ''}`}>
     <div class="phoenix__narrative reveal">
       <p class="overline">The Rebirth</p>
       <hr class="fire-rule" />
@@ -25,14 +25,16 @@ const d = entry!.data;
       </div>
     </div>
 
-    <aside class="cred reveal">
-      <div class="cred__item cred__item--link">
-        <span class="cred__label">{d.venture_label}</span>
-        <a href={d.venture_url} class="cred__link" target="_blank" rel="noopener">
-          {d.venture_text}
-        </a>
-      </div>
-    </aside>
+    {d.venture_url && (
+      <aside class="cred reveal">
+        <div class="cred__item cred__item--link">
+          <span class="cred__label">{d.venture_label}</span>
+          <a href={d.venture_url} class="cred__link" target="_blank" rel="noopener">
+            {d.venture_text}
+          </a>
+        </div>
+      </aside>
+    )}
   </div>
 </section>
 
@@ -77,6 +79,9 @@ const d = entry!.data;
   align-items: start;
   position: relative;
   z-index: 1;
+}
+.phoenix__grid--full {
+  grid-template-columns: 1fr;
 }
 .phoenix__heading {
   font-size: clamp(2.4rem, 6vw, 4.5rem);

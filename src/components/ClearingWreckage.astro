@@ -5,7 +5,7 @@ const d = entry!.data;
 ---
 <section class="wreckage" id="clearing-wreckage">
   <div class="container--wide">
-    <div class="wreckage__grid">
+    <div class={`wreckage__grid${!d.credentials?.length ? ' wreckage__grid--full' : ''}`}>
       <div class="wreckage__narrative reveal">
         <p class="overline">Clearing the Wreckage</p>
         <hr class="fire-rule" />
@@ -17,14 +17,16 @@ const d = entry!.data;
         </div>
       </div>
 
-      <aside class="cred reveal">
-        {d.credentials?.map((c: { label: string; value: string }) => (
-          <div class="cred__item">
-            <span class="cred__label">{c.label}</span>
-            <span class="cred__value">{c.value}</span>
-          </div>
-        ))}
-      </aside>
+      {d.credentials?.length > 0 && (
+        <aside class="cred reveal">
+          {d.credentials.map((c: { label: string; value: string }) => (
+            <div class="cred__item">
+              <span class="cred__label">{c.label}</span>
+              <span class="cred__value">{c.value}</span>
+            </div>
+          ))}
+        </aside>
+      )}
     </div>
   </div>
 </section>
@@ -47,6 +49,9 @@ const d = entry!.data;
   grid-template-columns: 3fr 2fr;
   gap: 4rem 5rem;
   align-items: start;
+}
+.wreckage__grid--full {
+  grid-template-columns: 1fr;
 }
 .wreckage__heading {
   font-size: clamp(2.4rem, 6vw, 4.5rem);
