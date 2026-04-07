@@ -2,7 +2,65 @@
   "heading_line1": "Crash",
   "heading_line2": "Landing.",
   "body": [
-    { "text": "Write your story here." }
+    {
+      "text": "What was supposed to be a fresh start and happy ending, ended up being anything but."
+    },
+    {
+      "text": "The divorce was official only 6 months after we arrived."
+    },
+    {
+      "text": "The wings had fallen off of the aircraft."
+    },
+    {
+      "text": "My ex didn't want to share in raising his kid — despite me not only allowing him a chance, but encouraging it."
+    },
+    {
+      "text": "I really wanted to give my kid some sense of a normal two parent life — but it wasn't meant to be."
+    },
+    {
+      "text": "He took a job out of state. The in-laws ended in divorce, too."
+    },
+    {
+      "text": "I was ready to move out of state to start fresh."
+    },
+    {
+      "text": "My father-in-law was supposed to help me load up my moving truck."
+    },
+    {
+      "text": "That day came and I waited for him. And waited."
+    },
+    {
+      "text": "I called. No answer."
+    },
+    {
+      "text": "I drove to his house. Knocked."
+    },
+    {
+      "text": "No answer."
+    },
+    {
+      "text": "Then I walked inside."
+    },
+    {
+      "text": "And found his body."
+    },
+    {
+      "text": "Death by suicide."
+    },
+    {
+      "text": "I fell to my knees and started balling."
+    },
+    {
+      "text": "I stayed for an extra week to plan and attend his funeral."
+    },
+    {
+      "text": "But leaving the gloomy, gray sky of Pennsylvania — both literally and metaphorically — was the only thing left to do."
+    }
   ],
-  "credentials": []
+  "credentials": [
+    {
+      "label": "Mood",
+      "value": "Sadness"
+    }
+  ]
 }
