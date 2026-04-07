@@ -37,9 +37,11 @@ collections:
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
-          - { label: "Paragraph 1", name: body_p1, widget: text }
-          - { label: "Paragraph 2 (HTML allowed)", name: body_p2, widget: text }
-          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
           - label: Credentials
             name: credentials
             widget: list
@@ -54,9 +56,11 @@ collections:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
           - { label: "Heading Line 3", name: heading_line3, widget: string }
-          - { label: "Paragraph 1", name: body_p1, widget: text }
-          - { label: "Paragraph 2", name: body_p2, widget: text }
-          - { label: "Paragraph 3 (HTML allowed)", name: body_p3, widget: text }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
           - { label: "Pull Quote", name: blockquote, widget: text }
           - label: Credentials
             name: credentials
@@ -71,9 +75,11 @@ collections:
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
-          - { label: "Paragraph 1", name: body_p1, widget: text }
-          - { label: "Paragraph 2 (HTML allowed)", name: body_p2, widget: text }
-          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
           - label: Credentials
             name: credentials
             widget: list
@@ -87,9 +93,11 @@ collections:
         fields:
           - { label: "Heading Line 1", name: heading_line1, widget: string }
           - { label: "Heading Line 2", name: heading_line2, widget: string }
-          - { label: "Paragraph 1 (HTML allowed)", name: body_p1, widget: text }
-          - { label: "Paragraph 2", name: body_p2, widget: text }
-          - { label: "Paragraph 3", name: body_p3, widget: text }
+          - label: Body Paragraphs
+            name: body
+            widget: list
+            fields:
+              - { label: Paragraph, name: text, widget: text }
           - { label: "Declaration Line 1", name: declaration_line1, widget: string }
           - { label: "Declaration Line 2", name: declaration_line2, widget: string }
           - { label: "Venture Label", name: venture_label, widget: string }

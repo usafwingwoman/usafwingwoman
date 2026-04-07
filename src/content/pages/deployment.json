@@ -2,9 +2,11 @@
   "heading_line1": "When it counted",
   "heading_line2": "most, I was",
   "heading_line3": "the one.",
-  "body_p1": "When my unit deployed to Iraq, I deployed as the only dual-qualified Mission Crew Commander on the EC-130H Compass Call airframe. That wasn't a title — it was a weight.",
-  "body_p2": "Every sortie we flew depended on my expertise and my decisions. There was no one else. I owned it.",
-  "body_p3": "On the ground, my squadron commander tapped me as <strong>Chief of Security</strong> — responsible for information security, operational security, and personnel security for the entire unit. I managed top secret clearance upgrades and led five airmen to the same standard I held in the air.",
+  "body": [
+    { "text": "When my unit deployed to Iraq, I deployed as the only dual-qualified Mission Crew Commander on the EC-130H Compass Call airframe. That wasn't a title — it was a weight." },
+    { "text": "Every sortie we flew depended on my expertise and my decisions. There was no one else. I owned it." },
+    { "text": "On the ground, my squadron commander tapped me as <strong>Chief of Security</strong> — responsible for information security, operational security, and personnel security for the entire unit. I managed top secret clearance upgrades and led five airmen to the same standard I held in the air." }
+  ],
   "blockquote": "Always delivered better than expected. Led from the front. Gave her time to others freely.",
   "credentials": [
     { "label": "Combat missions", "value": "30+" },

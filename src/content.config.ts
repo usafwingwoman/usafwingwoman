@@ -20,10 +20,8 @@ const pages = defineCollection({
     heading_line1: z.string().optional(),
     heading_line2: z.string().optional(),
     heading_line3: z.string().optional(),
-    // Body paragraphs (may contain inline HTML)
-    body_p1: z.string().optional(),
-    body_p2: z.string().optional(),
-    body_p3: z.string().optional(),
+    // Body paragraphs as list (may contain inline HTML)
+    body: z.array(z.object({ text: z.string() })).optional(),
     // Credential sidebar
     credentials: z.array(credential).optional(),
     // Deployment blockquote

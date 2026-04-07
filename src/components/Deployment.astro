@@ -13,9 +13,7 @@ const d = entry!.data;
         {d.heading_line1}<br/>{d.heading_line2}<br/><em>{d.heading_line3}</em>
       </h2>
       <div class="deploy__body">
-        <p>{d.body_p1}</p>
-        <p>{d.body_p2}</p>
-        <p set:html={d.body_p3} />
+        {d.body?.map((p: { text: string }) => <p set:html={p.text} />)}
         <blockquote class="deploy__quote">
           <p>"{d.blockquote}"</p>
         </blockquote>

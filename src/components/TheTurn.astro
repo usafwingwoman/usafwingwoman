@@ -13,9 +13,7 @@ const d = entry!.data;
           {d.heading_line1}<br/><em>{d.heading_line2}</em>
         </h2>
         <div class="turn__body">
-          <p>{d.body_p1}</p>
-          <p set:html={d.body_p2} />
-          <p>{d.body_p3}</p>
+          {d.body?.map((p: { text: string }) => <p set:html={p.text} />)}
         </div>
       </div>
 

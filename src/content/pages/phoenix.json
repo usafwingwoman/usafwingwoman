@@ -1,9 +1,11 @@
 {
   "heading_line1": "I burned it all",
   "heading_line2": "down. On purpose.",
-  "body_p1": "Today I am <strong>Sage J Phoenix</strong>. Not a revision of who I was — a complete rebirth. I burned the old identity to the ground: the shame, the trauma, the stories that no longer served me. All of it, ash.",
-  "body_p2": "What rose from it was always real: the discipline of a Mission Crew Commander. The calm of someone who supervised nine people at altitude over hostile territory. The precision of a Chief who managed top secret operations on the ground. The leadership those above and below her always trusted.",
-  "body_p3": "I am 48 years old. It is my time to build, succeed, and leave a remarkable legacy.",
+  "body": [
+    { "text": "Today I am <strong>Sage J Phoenix</strong>. Not a revision of who I was — a complete rebirth. I burned the old identity to the ground: the shame, the trauma, the stories that no longer served me. All of it, ash." },
+    { "text": "What rose from it was always real: the discipline of a Mission Crew Commander. The calm of someone who supervised nine people at altitude over hostile territory. The precision of a Chief who managed top secret operations on the ground. The leadership those above and below her always trusted." },
+    { "text": "I am 48 years old. It is my time to build, succeed, and leave a remarkable legacy." }
+  ],
   "declaration_line1": "The mission isn't over.",
   "declaration_line2": "It's just beginning.",
   "venture_label": "Current venture",

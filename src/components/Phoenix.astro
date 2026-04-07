@@ -17,9 +17,7 @@ const d = entry!.data;
         {d.heading_line1}<br/><em>{d.heading_line2}</em>
       </h2>
       <div class="phoenix__body">
-        <p set:html={d.body_p1} />
-        <p>{d.body_p2}</p>
-        <p>{d.body_p3}</p>
+        {d.body?.map((p: { text: string }) => <p set:html={p.text} />)}
         <p class="phoenix__declaration">
           {d.declaration_line1}<br/>
           <em>{d.declaration_line2}</em>
