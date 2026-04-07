@@ -76,6 +76,22 @@
     {
       "label": "Clearance held",
       "value": "Top Secret/TS-SCI"
+    },
+    {
+      "label": "Combat Missions",
+      "value": "30+"
+    },
+    {
+      "label": "Combat Hours",
+      "value": "250+"
+    },
+    {
+      "label": "Meritorious Service Award",
+      "value": "Air Medal"
+    },
+    {
+      "label": "Aircrew Position",
+      "value": "Chief (Mission Crew Commander)"
     }
   ]
 }
