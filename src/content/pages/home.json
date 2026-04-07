@@ -1,6 +1,6 @@
 {
   "hero_name": "Sage J Phoenix",
-  "hero_tagline_1": "Rising from the ashes -",
+  "hero_tagline_1": "Rising from the ashes,",
   "hero_tagline_2": "a Phoenix is born.",
   "origin_heading_1": "Built for",
   "origin_heading_2": "something bigger.",
@@ -20,12 +20,12 @@
   "turn_p2": "For years, I carried the weight of that choice like a wound. The shame of leaving early. The grief of an identity I'd poured myself into. The question that wouldn't quiet itself: What would I have become?",
   "turn_p3": "But time — and honest reckoning — has a way of rewriting the story. I didn't abandon my service. I completed it on my own terms. And every skill I built, every crew I led, every mission I owned, every standard I upheld — all of it came with me.",
   "turn_p4": "I have since put my life in full perspective. The shame is gone. What I carried out of that chapter is worth more than what I left behind.",
-  "phoenix_heading_1": "I burned it all",
-  "phoenix_heading_2": "down. On purpose.",
-  "phoenix_p1": "Today I am Sage J Phoenix. Not a revision of who I was — a complete rebirth. I burned the old identity to the ground: the shame, the trauma, the stories that no longer served me. All of it, ash.",
-  "phoenix_p2": "And from the ash, I brought what was always real: the discipline of a Mission Crew Commander. The calm of someone who has supervised nine people at 25,000 feet over hostile territory. The precision of a Chief of Security who managed top secret operations. The leadership that those above and below her always trusted.",
-  "phoenix_p3": "I am 48 years old. It is literally my time to build, to succeed, and to leave a remarkable legacy.",
-  "phoenix_decl_1": "The mission isn't over.",
+  "footer_aeryon_url": "https://aeryonglobal.com",
   "phoenix_decl_2": "It's just beginning.",
-  "footer_aeryon_url": "https://aeryonglobal.com"
+  "phoenix_decl_1": "The mission isn't over.",
+  "phoenix_p3": "I am 48 years old. It is literally my time to build, to succeed, and to leave a remarkable legacy.",
+  "phoenix_p2": "And from the ash, I brought what was always real: the discipline of a Mission Crew Commander. The calm of someone who has supervised nine people at 25,000 feet over hostile territory. The precision of a Chief of Security who managed top secret operations. The leadership that those above and below her always trusted.",
+  "phoenix_p1": "Today I am Sage J Phoenix. Not a revision of who I was — a complete rebirth. I burned the old identity to the ground: the shame, the trauma, the stories that no longer served me. All of it, ash.",
+  "phoenix_heading_2": "down. On purpose.",
+  "phoenix_heading_1": "I burned it all"
 }
