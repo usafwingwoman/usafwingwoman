@@ -1,0 +1,139 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const stories = await getCollection('stories', ({ data }) => !data.draft);
+  return stories.map((story) => ({
+    params: { slug: story.slug },
+    props: { story },
+  }));
+}
+
+const { story } = Astro.props;
+const { Content } = await story.render();
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Base title={`${story.data.title} | Sage J Phoenix`} description={story.data.description}>
+  <article class="post">
+    <div class="container">
+      <div class="post__header">
+        <a href="/blog" class="post__back">← Back</a>
+        <p class="overline">Stories</p>
+        <hr class="fire-rule" />
+        <h1 class="display post__title">{story.data.title}</h1>
+        <time class="post__date" datetime={story.data.date.toISOString()}>
+          {formatDate(story.data.date)}
+        </time>
+      </div>
+      <div class="post__body prose">
+        <Content />
+      </div>
+      <div class="post__footer">
+        <a href="/blog" class="post__back">← Back to Stories</a>
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+.post {
+  padding-top: clamp(6rem, 12vw, 10rem);
+  padding-bottom: var(--section-pad);
+  background: var(--ash);
+  min-height: 100svh;
+}
+.post__back {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 2.5rem;
+  transition: color 0.2s;
+}
+.post__back:hover { color: var(--amber); }
+.post__header {
+  max-width: 680px;
+  margin-bottom: 3.5rem;
+}
+.post__title {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: var(--white);
+  margin-bottom: 1.25rem;
+}
+.post__date {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+.post__body {
+  max-width: 680px;
+}
+.post__footer {
+  max-width: 680px;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(155,127,120,0.15);
+}
+
+/* Prose styles */
+.prose {
+  color: var(--bone);
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  line-height: 1.85;
+}
+.prose p { margin-bottom: 1.6rem; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong {
+  color: var(--amber);
+  font-weight: 500;
+}
+.prose em {
+  color: var(--bone);
+  font-style: italic;
+}
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose blockquote {
+  border-left: 2px solid var(--crimson);
+  padding-left: 1.5rem;
+  margin-block: 2rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--slate);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.prose ul, .prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+.prose li { margin-bottom: 0.4rem; }
+.prose a {
+  color: var(--amber);
+  text-decoration: underline;
+  text-decoration-color: rgba(232,145,58,0.4);
+  transition: text-decoration-color 0.2s;
+}
+.prose a:hover { text-decoration-color: var(--amber); }
+</style>

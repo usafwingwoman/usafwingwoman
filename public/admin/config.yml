@@ -56,3 +56,17 @@ collections:
           - { label: "Phoenix — Declaration Line 1", name: phoenix_decl_1, widget: string }
           - { label: "Phoenix — Declaration Line 2", name: phoenix_decl_2, widget: string }
           - { label: "Footer — Aeryon URL", name: footer_aeryon_url, widget: string }
+
+  - name: stories
+    label: Stories
+    folder: src/content/stories
+    create: true
+    slug: "{{slug}}"
+    media_folder: /public/images/stories
+    public_folder: /images/stories
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: string, required: false }
+      - { label: Draft, name: draft, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown }
