@@ -46,13 +46,21 @@
       "text": "Group counseling. Individual counseling. Therapy. On repeat. We tried."
     },
     {
+      "text": "Out of the clear blue sky, I got the call I wasn't expecting — maybe ever: \"Your dad is on life support.\""
+    },
+    {
+      "text": "He died only 5 days later — less than a week  after his 60th birthday."
+    },
+    {
+      "text": "Depression hit hard."
+    },
+    {
       "text": "Then I got pregnant."
     },
     {
       "text": "That was when I had to make the hardest decision of my life."
     }
   ],
-  "blockquote": "hold right here.",
   "credentials": [
     {
       "label": "Combat missions",
@@ -70,5 +78,6 @@
       "label": "Airmen led as Chief of Security",
       "value": "5"
     }
-  ]
+  ],
+  "blockquote": "hold right here."
 }
