@@ -80,7 +80,7 @@ collections:
               - { label: Label, name: label, widget: string }
               - { label: Value, name: value, widget: string }
 
-      - label: The Turn
+      - label: Losing Altitude
         name: theturn
         file: src/content/pages/theturn.json
         fields:
