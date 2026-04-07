@@ -28,6 +28,7 @@
 html { scroll-behavior: smooth; }
 
 body {
+  min-width: 320px;
   background: var(--ash);
   color: var(--bone);
   font-family: var(--font-body);
