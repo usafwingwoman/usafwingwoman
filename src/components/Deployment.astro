@@ -14,9 +14,6 @@ const d = entry!.data;
       </h2>
       <div class="deploy__body">
         {d.body?.map((p: { text: string }) => <p set:html={p.text} />)}
-        <blockquote class="deploy__quote">
-          <p>"{d.blockquote}"</p>
-        </blockquote>
       </div>
     </div>
 

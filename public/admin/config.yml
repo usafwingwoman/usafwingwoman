@@ -73,7 +73,6 @@ collections:
             widget: list
             fields:
               - { label: Paragraph, name: text, widget: text }
-          - { label: "Pull Quote", name: blockquote, widget: text }
           - label: Credentials
             name: credentials
             widget: list
