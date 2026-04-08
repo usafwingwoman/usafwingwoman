@@ -49,7 +49,8 @@ const d = entry!.data;
 <style>
 .phoenix {
   position: relative;
-  padding-block: var(--section-pad);
+  padding-top: var(--section-pad);
+  padding-bottom: 15rem;
   background: var(--ash);
   overflow: hidden;
 }
@@ -107,6 +108,22 @@ const d = entry!.data;
   color: var(--bone);
   opacity: 0.85;
 }
+.phoenix__body p { margin: 0; }
+:global(.drop-quote) {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--flame);
+  opacity: 1 !important;
+}
+:global(.drop-quote--sm) {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+:global(.drop-quote--amber) {
+  color: var(--amber);
+}
 .phoenix__body strong {
   color: var(--amber);
   font-weight: 500;
@@ -158,6 +175,9 @@ const d = entry!.data;
 .cred__link:hover { color: var(--flame); }
 
 @media (max-width: 768px) {
+  .phoenix {
+    padding-bottom: var(--section-pad);
+  }
   .phoenix__grid {
     grid-template-columns: 1fr;
     gap: 3rem;
