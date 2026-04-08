@@ -75,12 +75,20 @@
       "value": "1"
     },
     {
+      "label": "Deaths in Family",
+      "value": "1"
+    },
+    {
       "label": "Pregnancies",
       "value": "1"
     },
     {
       "label": "Therapy Sessions",
       "value": "Countless"
+    },
+    {
+      "label": "Major Life Decisions",
+      "value": "1"
     }
   ],
   "blockquote": "hold right here."
