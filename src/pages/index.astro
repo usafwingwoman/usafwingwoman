@@ -32,9 +32,38 @@ const componentMap: Record<string, (_props: Record<string, never>) => any> = {
       .filter(s => s.enabled)
       .map(s => {
         const Component = componentMap[s.id];
-        return Component ? <Component /> : null;
+        return (
+          <>
+            {s.id === 'phoenix' && (
+              <section class="image-break" aria-hidden="true">
+                <div class="image-break__overlay"></div>
+              </section>
+            )}
+            {Component ? <Component /> : null}
+          </>
+        );
       })
     }
   </main>
   <Footer />
 </Base>
+
+<style>
+.image-break {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url('/Images/phoenix-fire-wings.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.image-break__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 768px) {
+  .image-break { height: 50vh; }
+}
+</style>
