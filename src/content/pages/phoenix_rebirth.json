@@ -64,5 +64,27 @@
   "declaration_line2": "It's only just beginning.",
   "venture_label": "Current venture",
   "venture_text": "aeryon.global →",
-  "venture_url": "https://aeryon.global"
+  "venture_url": "https://aeryon.global",
+  "credentials": [
+    {
+      "label": "Rebirths",
+      "value": "1"
+    },
+    {
+      "label": "Universe's Blessing to Proceed",
+      "value": "11/11/2025 (Veterans Day)"
+    },
+    {
+      "label": "New Venture Launched",
+      "value": "01/09/2026 (23rd Anniversary of USAF enlistment)"
+    },
+    {
+      "label": "ReBirtday (48 years)",
+      "value": "011/16/2026"
+    },
+    {
+      "label": "Officially Sage J Phoenix",
+      "value": "02/20/2026"
+    }
+  ]
 }
