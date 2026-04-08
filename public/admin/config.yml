@@ -152,9 +152,16 @@ collections:
               - { label: Paragraph, name: text, widget: text }
           - { label: "Declaration Line 1", name: declaration_line1, widget: string }
           - { label: "Declaration Line 2", name: declaration_line2, widget: string }
-          - { label: "Venture Label", name: venture_label, widget: string }
-          - { label: "Venture Link Text", name: venture_text, widget: string }
-          - { label: "Venture URL", name: venture_url, widget: string }
+          - { label: "Venture Label", name: venture_label, widget: string, required: false }
+          - { label: "Venture Link Text", name: venture_text, widget: string, required: false }
+          - { label: "Venture URL", name: venture_url, widget: string, required: false }
+          - label: Credentials
+            name: credentials
+            widget: list
+            required: false
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
 
       - label: Footer
         name: footer

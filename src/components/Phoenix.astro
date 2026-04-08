@@ -9,7 +9,7 @@ const d = entry!.data;
     <div class="phoenix__fire phoenix__fire--2"></div>
   </div>
 
-  <div class={`container--wide phoenix__grid${!d.venture_url ? ' phoenix__grid--full' : ''}`}>
+  <div class={`container--wide phoenix__grid${!d.venture_url && !d.credentials?.length ? ' phoenix__grid--full' : ''}`}>
     <div class="phoenix__narrative reveal">
       <p class="overline">The Rebirth</p>
       <hr class="fire-rule" />
@@ -25,14 +25,22 @@ const d = entry!.data;
       </div>
     </div>
 
-    {d.venture_url && (
+    {(d.venture_url || d.credentials?.length > 0) && (
       <aside class="cred reveal">
-        <div class="cred__item cred__item--link">
-          <span class="cred__label">{d.venture_label}</span>
-          <a href={d.venture_url} class="cred__link" target="_blank" rel="noopener">
-            {d.venture_text}
-          </a>
-        </div>
+        {d.venture_url && (
+          <div class="cred__item cred__item--link">
+            <span class="cred__label">{d.venture_label}</span>
+            <a href={d.venture_url} class="cred__link" target="_blank" rel="noopener">
+              {d.venture_text}
+            </a>
+          </div>
+        )}
+        {d.credentials?.map((c: { label: string; value: string }) => (
+          <div class="cred__item">
+            <span class="cred__label">{c.label}</span>
+            <span class="cred__value">{c.value}</span>
+          </div>
+        ))}
       </aside>
     )}
   </div>
