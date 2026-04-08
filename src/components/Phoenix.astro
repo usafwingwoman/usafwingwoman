@@ -27,6 +27,12 @@ const d = entry!.data;
 
     {(d.venture_url || d.credentials?.length > 0) && (
       <aside class="cred reveal">
+        {d.credentials?.map((c: { label: string; value: string }) => (
+          <div class="cred__item">
+            <span class="cred__label">{c.label}</span>
+            <span class="cred__value">{c.value}</span>
+          </div>
+        ))}
         {d.venture_url && (
           <div class="cred__item cred__item--link">
             <span class="cred__label">{d.venture_label}</span>
@@ -35,12 +41,6 @@ const d = entry!.data;
             </a>
           </div>
         )}
-        {d.credentials?.map((c: { label: string; value: string }) => (
-          <div class="cred__item">
-            <span class="cred__label">{c.label}</span>
-            <span class="cred__value">{c.value}</span>
-          </div>
-        ))}
       </aside>
     )}
   </div>
