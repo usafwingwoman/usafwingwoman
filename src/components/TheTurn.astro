@@ -69,9 +69,22 @@ const d = entry!.data;
   color: var(--bone);
   opacity: 0.85;
 }
+.turn__body p { margin: 0; }
 .turn__body em {
   color: var(--amber);
   font-style: italic;
+}
+.drop-quote {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--flame);
+  opacity: 1 !important;
+}
+.drop-quote--amber {
+  color: var(--amber);
 }
 
 /* Credential block */

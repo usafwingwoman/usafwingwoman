@@ -71,9 +71,22 @@ const d = entry!.data;
   color: var(--bone);
   opacity: 0.85;
 }
+.deploy__body p { margin: 0; }
 .deploy__body strong {
   color: var(--amber);
   font-weight: 500;
+}
+.drop-quote {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--flame);
+  opacity: 1 !important;
+}
+.drop-quote--amber {
+  color: var(--amber);
 }
 .deploy__quote {
   border-left: 2px solid var(--crimson);

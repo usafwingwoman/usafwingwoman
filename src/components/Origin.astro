@@ -65,6 +65,26 @@ const d = entry!.data;
   color: var(--amber);
   font-weight: 500;
 }
+.origin__body em {
+  color: var(--flame);
+  font-style: normal;
+}
+.origin__body p { margin: 0; }
+.drop-quote {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--flame);
+  opacity: 1 !important;
+}
+.drop-quote--sm {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+.drop-quote--amber {
+  color: var(--amber);
+}
 
 /* Credential block */
 .cred {

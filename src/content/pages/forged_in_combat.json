@@ -24,7 +24,7 @@
       "text": "I loved the military life. The brotherhood you experience is really like no other. You partied together, learned together, and fought together. It redefined teamwork and camaraderie for me."
     },
     {
-      "text": "<em><h3> It gave me a place where I felt like I belonged.</h3></em>"
+      "text": "<span class=\"drop-quote drop-quote--sm drop-quote--amber\"><em>It gave me a place where I felt like I belonged.</em></span>"
     },
     {
       "text": "I felt unstoppable. Upon my arrival at Davis-Monthan Air Force Base, I soaked up the sun, admired the mountains, and knew this was meant to be."
@@ -57,53 +57,20 @@
       "text": "An Air Medal for meritorious service."
     },
     {
-      "text": "<em><h3>Then I came back home. And everything changed.</h3></em>"
+      "text": "Then I came back home. <span class=\"drop-quote drop-quote--sm\"><em>And everything changed.</em></span>"
     }
   ],
   "credentials": [
-    {
-      "label": "JSUNT class rank",
-      "value": "#1 of 57"
-    },
-    {
-      "label": "Academic awards taken",
-      "value": "Both"
-    },
-    {
-      "label": "Ground Job",
-      "value": "Chief of Security"
-    },
-    {
-      "label": "Clearance held",
-      "value": "Top Secret/TS-SCI"
-    },
-    {
-      "label": "Managed Security Clearances for",
-      "value": "160+"
-    },
-    {
-      "label": "Airmen Supervised on Ground",
-      "value": "5"
-    },
-    {
-      "label": "Combat Missions",
-      "value": "30+"
-    },
-    {
-      "label": "Combat Hours",
-      "value": "250+"
-    },
-    {
-      "label": "Meritorious Service Award",
-      "value": "Air Medal"
-    },
-    {
-      "label": "Crew members supervised airborne",
-      "value": "9"
-    },
-    {
-      "label": "Aircrew Position",
-      "value": "Chief"
-    }
+    { "label": "JSUNT class rank", "value": "#1 of 57" },
+    { "label": "Academic awards taken", "value": "Both" },
+    { "label": "Ground Job", "value": "Chief of Security" },
+    { "label": "Clearance held", "value": "Top Secret/TS-SCI" },
+    { "label": "Managed Security Clearances for", "value": "160+" },
+    { "label": "Airmen Supervised on Ground", "value": "5" },
+    { "label": "Combat Missions", "value": "30+" },
+    { "label": "Combat Hours", "value": "250+" },
+    { "label": "Meritorious Service Award", "value": "Air Medal" },
+    { "label": "Crew members supervised airborne", "value": "9" },
+    { "label": "Aircrew Position", "value": "Chief" }
   ]
 }
