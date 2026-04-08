@@ -53,8 +53,24 @@
   ],
   "credentials": [
     {
-      "label": "Outlook",
-      "value": "Sunny"
+      "label": "Books Read, 1 Year",
+      "value": "80+"
+    },
+    {
+      "label": "Books Read, 4 years",
+      "value": "300+"
+    },
+    {
+      "label": "Seminars Attended",
+      "value": "Dozens"
+    },
+    {
+      "label": "Careers Held",
+      "value": "3"
+    },
+    {
+      "label": "Years Without a Real Identity",
+      "value": "19"
     }
   ]
 }
