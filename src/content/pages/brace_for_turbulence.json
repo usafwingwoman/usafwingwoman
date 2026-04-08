@@ -63,20 +63,20 @@
   ],
   "credentials": [
     {
-      "label": "Combat missions",
-      "value": "30+"
+      "label": "Days Complete in the Desert",
+      "value": "100"
     },
     {
-      "label": "Combat hours in hostile territory",
-      "value": "250+"
+      "label": "Broken Bones",
+      "value": "1"
     },
     {
-      "label": "Meritorious service decoration",
-      "value": "Air Medal"
+      "label": "Deaths in the Family",
+      "value": "1"
     },
     {
-      "label": "Airmen led as Chief of Security",
-      "value": "5"
+      "label": "Pregnancies",
+      "value": "1"
     }
   ],
   "blockquote": "hold right here."
