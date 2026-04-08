@@ -47,16 +47,20 @@
   ],
   "credentials": [
     {
-      "label": "Revenue grown post-military",
-      "value": "560%"
+      "label": "Moves Across the Country",
+      "value": "1"
     },
     {
-      "label": "Retention rate achieved",
-      "value": "98%"
+      "label": "Episodes of Abuse",
+      "value": "5"
     },
     {
-      "label": "Consecutive years Top 10",
-      "value": "4"
+      "label": "Divorces",
+      "value": "2"
+    },
+    {
+      "label": "Deaths in the Family",
+      "value": "1"
     }
   ]
 }
