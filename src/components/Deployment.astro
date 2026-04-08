@@ -76,7 +76,7 @@ const d = entry!.data;
   color: var(--amber);
   font-weight: 500;
 }
-.drop-quote {
+:global(.drop-quote) {
   display: block;
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -85,7 +85,10 @@ const d = entry!.data;
   color: var(--flame);
   opacity: 1 !important;
 }
-.drop-quote--amber {
+:global(.drop-quote--sm) {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+:global(.drop-quote--amber) {
   color: var(--amber);
 }
 .deploy__quote {
