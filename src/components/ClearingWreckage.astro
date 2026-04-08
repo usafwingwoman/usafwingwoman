@@ -83,10 +83,13 @@ const d = entry!.data;
   margin: 0;
 }
 :global(.drop-quote--sm) {
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-size: clamp(1.3rem, 2.5vw, 2rem) !important;
 }
 :global(.drop-quote--xs) {
-  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem) !important;
+}
+:global(.drop-quote--xxs) {
+  font-size: clamp(0.7rem, 1.2vw, 1rem) !important;
 }
 :global(.drop-quote--amber) {
   color: var(--amber);

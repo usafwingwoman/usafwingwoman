@@ -41,6 +41,9 @@ const d = entry!.data;
             </a>
           </div>
         )}
+        <div class="cred__photo">
+          <img src="/Images/military-profile-photo-full.png" alt="Sage J Phoenix — U.S. Air Force" loading="lazy" />
+        </div>
       </aside>
     )}
   </div>
@@ -174,6 +177,18 @@ const d = entry!.data;
 }
 .cred__link:hover { color: var(--flame); }
 
+.cred__photo {
+  margin-top: 12rem;
+}
+.cred__photo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  filter: grayscale(20%);
+}
+
 @media (max-width: 768px) {
   .phoenix {
     padding-bottom: var(--section-pad);
@@ -184,6 +199,9 @@ const d = entry!.data;
   }
   .cred {
     position: static;
+  }
+  .cred__photo {
+    margin-top: 8rem;
   }
 }
 </style>
