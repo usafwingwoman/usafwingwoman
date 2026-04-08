@@ -305,7 +305,11 @@ const heroFirst = nameParts.join(' ');
     }, 150);
   });
 
-  init();
-  tick();
+  if (document.readyState === 'complete') {
+    init();
+    tick();
+  } else {
+    window.addEventListener('load', () => { init(); tick(); }, { once: true });
+  }
 })();
 </script>
