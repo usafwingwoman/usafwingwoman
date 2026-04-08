@@ -56,8 +56,16 @@
   ],
   "credentials": [
     {
-      "label": "Mood",
-      "value": "Heavy"
+      "label": "Divorces",
+      "value": "2"
+    },
+    {
+      "label": "Funerals",
+      "value": "1"
+    },
+    {
+      "label": "Moves Across Country",
+      "value": "1"
     }
   ]
 }
